@@ -5,6 +5,7 @@ Library     OperatingSystem
 Library     ImapLibrary
 Library     String
 Library     RequestsLibrary
+Library     example.py  # Import python files as libraries
 Resource    ../../  # Goes two directory up in the
 Resource    ${variable}/../ # Variables can be used in path
 Resource    ../../exampleLib.robot
@@ -78,7 +79,7 @@ Select Browser In Test Suite
 
 Get Variables From Environment Variables
     [Documentation]  ENVIRONMENTAL_VARIABLE_NAME can be for example the variable_4
-    [Documentation]  Use Set Log Level NONE so if environmental variable contains password it is not printed to report
+    [Documentation]  Use Set Log Level NONE so if environmental variable contains passwords it is not printed to report
     [Documentation]  Set Log Level Info so the log level is returned for the rest of the tests
     Set Log Level  NONE
 
