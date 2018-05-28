@@ -22,13 +22,14 @@ ${PAGE_OBJECT_5} =                  id=
 
 *** Keywords ***
 Click
-    [Documentation]  Usefull when testing with firefox (Click Element might not work always)
+    [Documentation]  Usefull when testing with firefox (Click Element might not always work)
     [Arguments]    ${locator}
     Wait Until Element is Visible    ${locator}    ${WAIT_TIMEOUT}
     Mouse over  ${locator}
     Click Element    ${locator}
 
 Email Handling Keyword
+    [Documentation]  Keywords are taken from ImapLibrary
     [Arguments]  ${subject}  ${title1}  ${title2}
     Open Mailbox  host=  user=  password=
     ${LATEST} =  Wait For Email  sender=  status=UNSEEN  subject=${subject}  timeout=180
