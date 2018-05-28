@@ -6,7 +6,7 @@ Library     ImapLibrary
 Library     String
 Library     RequestsLibrary
 Library     example.py  # Import python files as libraries
-Resource    ../../  # Goes two directories up in the
+Resource    ../../  # Goes two directories up in the directory
 Resource    ${variable}/../ # Variables can be used in path
 Resource    ../../exampleLib.robot
 
