@@ -79,8 +79,8 @@ Select Browser In Test Suite
 
 Get Variables From Environment Variables
     [Documentation]  ENVIRONMENTAL_VARIABLE_NAME can be for example the variable_4
-    [Documentation]  Use Set Log Level NONE so if environmental variable contains passwords it is not printed to report
-    [Documentation]  Set Log Level Info so the log level is returned for the rest of the tests
+    ...              Use Set Log Level NONE so if environmental variable contains passwords it is not printed to report
+    ...              Set Log Level Info so the log level is returned for the rest of the tests
     Set Log Level  NONE
 
     ${variable_4} =  Get Environment Variable  ENVIRONMENTAL_VARIABLE_NAME  undefined
